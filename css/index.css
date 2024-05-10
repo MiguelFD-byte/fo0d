@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+h3{
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+    margin: 1em;
+    font-weight: 300;
+    
+}
+
+h2{
+    font-weight: 300;
+   
+}
+
+
+
+.menu{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+  
+}
+
+.menu div{
+    width: 410px;
+    height: 310px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+}
+
+.img1{
+    background-image: url(../img/ceviche.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+.text1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: 0.4s, visibility 0.1s;
+}
+
+.img1:hover .text1{
+    transform: translateY(0);
+    visibility: visible;
+}
+
+
+
+.img2{
+    background-image: url(../img/marisco.jpg);
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.img2:hover .text2{
+    transform: translateY(0);
+    visibility: visible;
+}
+.text2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: 0.4s, visibility 0.1s;
+}
+
+.img3{
+    background-image: url(../img/causa.png);
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.img3:hover .text3{
+    transform: translateY(0);
+    visibility: visible;
+}
+.text3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: 0.4s, visibility 0.1s;
+}
+
+
+
+.img4{
+    background-image: url(../img/lasagna.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+.text4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: 0.4s, visibility 0.1s;
+}
+
+.img4:hover .text4{
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.img5{
+    background-image: url(../img/alfajor.jpg);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.text5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: 0.4s, visibility 0.1s;
+}
+
+.img5:hover .text5{
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.img6{
+    background-image: url(../img/crema.png);
+    position: relative;
+    overflow: hidden;
+}
+
+.text6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: 0.4s, visibility 0.1s;
+}
+
+.img6:hover .text6{
+    transform: translateY(0);
+    visibility: visible;
+}
+
+
+
+a{
+    position: absolute;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1024px){
+
+    .menu div{
+     margin-bottom: 1em;
+    }
+    a{
+        padding: 4em;
+    }
+ }
+
+@media only screen and (max-width:800px){
+
+   .menu div{
+    margin-bottom: 1em;
+    text-align: start;
+   }
+
+   a{
+    padding: 2em;
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+
+    
+    .menu{
+        padding: 2em;
+    }
+
+    h1{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1.3em;
+        
+    }
+    .menu div{
+
+        height: 250px;
+        
+    }
+    a{
+        padding: 0;
+        left: 25px;
+    }
+}
